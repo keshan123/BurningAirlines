@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
-  root :to => 'planes#new'
+
+  root :to => 'pages#index'
   resources :users
   resources :flights
   resources :planes
