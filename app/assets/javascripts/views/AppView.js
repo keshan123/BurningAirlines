@@ -19,11 +19,11 @@ app.AppView = Backbone.View.extend({
 
     // var flightView = new app.FlightView();
     // flightView.render();    
-<<<<<<< HEAD
+
     // var seatingView = new app.seatingView();
     // seatingView.render();
 
-=======
+
 
 
     // var seatingView = new app.seatingView();
@@ -33,6 +33,6 @@ app.AppView = Backbone.View.extend({
     seatingView.render();
 
 
->>>>>>> 820c18af626f5056994bc4b9a925f67051060245
+
   }
 });
