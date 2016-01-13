@@ -16,11 +16,37 @@ app.FlightView = Backbone.View.extend({
       $('#main').append("<h2>" + planeName + "</h2>");
 
       var rows = plane.get('rows');
-      var rowList = _.range(1, (rows+1))
-      $('#main').append("<h2>Rows:" + rowList + "</h2>");
-
       var columns = plane.get('columns');
-      $('#main').append("<h2>Columns:" + columns + "</h2>");
+
+      Array.range= function(a, b, step){
+        var A = [];
+        if (typeof a == 'number'){
+            A[0] = a;
+            step = step || 1;
+            while(a+step<= b){
+                A[A.length]= a+= step;
+            }
+        }
+        else {
+            var s = 'abcdefghijklmnopqrstuvwxyz';
+            if(a === a.toUpperCase()){
+                b = b.toUpperCase();
+                s = s.toUpperCase();
+            }
+            s = s.substring(s.indexOf(a), s.indexOf(b)+ 1);
+            A = s.split('');        
+        }
+        return A;
+      }
+
+      var rowList = Array.range(1, rows);
+      $('#main').append("<h2>Rows:" + rowList + "</h2>");
+  
+      var columnList = Array.range('A', 'F')
+      $('#main').append("<h2>Columns:" + columnList + "</h2>");
+    
+     var seats = _.each(rowList, function(row){ _.map(columnList, function(column){column + row})}
+      $('#main').append("<h2>Seats:" + seats + "</h2>");
     }
   }
 
