@@ -11,9 +11,7 @@ app.Flight = Backbone.Model.extend({
   initialize: function(){
     console.log("New post created.");
 
-    // this.on("change:author", function(){
-    //   console.log( "A posts author was changed." );
-    // });
+
   },
 
   

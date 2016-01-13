@@ -4,6 +4,7 @@ class CreatePlanes < ActiveRecord::Migration
       t.string :name
       t.integer :rows
       t.string :columns
+      t.integr :plane_id
 
       t.timestamps null: false
     end

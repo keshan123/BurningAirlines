@@ -31,6 +31,7 @@
     <%= f.label :plane_id %>
     <%= f.select :plane_id, Plane.all.map{|plane|[plane.name, plane.id]} %>
   </div>
+
   <div class="actions">
     <%= f.submit %>
   </div>

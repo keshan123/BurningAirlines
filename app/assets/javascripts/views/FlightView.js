@@ -5,6 +5,9 @@ app.FlightView = Backbone.View.extend({
   render: function(){
     var flightViewTemplater = _.template( $('#flightView').html());
     this.$el.html( flightViewTemplater( this.model.toJSON() ));
+
+    var planeInfo = this.model.get('plane_id');
+    $('#main').append("<h2>" + planeInfo + "</h2>");
   }
 
 });
