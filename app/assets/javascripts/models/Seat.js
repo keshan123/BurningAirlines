@@ -1,10 +1,12 @@
 var app = app || {};
 
 app.Seat = Backbone.Model.extend({
+  urlRoot: "/index",
 
   defaults:{
-    row: "N/A",
-    column: "N/A"
+    row: "NA",
+    column: "NA"
+
   }
 
 })
