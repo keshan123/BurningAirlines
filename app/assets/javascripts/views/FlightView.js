@@ -15,6 +15,12 @@ app.FlightView = Backbone.View.extend({
       var planeName = plane.get('name');
       $('#main').append("<h2>" + planeName + "</h2>");
 
+      var rows = plane.get('rows');
+      var rowList = _.range(1, (rows+1))
+      $('#main').append("<h2>Rows:" + rowList + "</h2>");
+
+      var columns = plane.get('columns');
+      $('#main').append("<h2>Columns:" + columns + "</h2>");
     }
   }
 
