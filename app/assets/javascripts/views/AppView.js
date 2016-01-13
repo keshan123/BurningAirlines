@@ -21,5 +21,23 @@ app.AppView = Backbone.View.extend({
     // flightView.render();    
 
 
+    // var seatingView = new app.seatingView();
+    // seatingView.render();
+
+
+
+
+    // var seatingView = new app.seatingView();
+    // seatingView.render();
+
+    var seatingView = new app.seatingView();
+    seatingView.render();
+
+
+
+
+
+
+
   }
 });

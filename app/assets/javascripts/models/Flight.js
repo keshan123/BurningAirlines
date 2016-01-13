@@ -1,5 +1,7 @@
 var app = app|| {};
 
+
+
 app.Flight = Backbone.Model.extend({
   urlRoot: '/flights',
   defaults: {
@@ -12,6 +14,9 @@ app.Flight = Backbone.Model.extend({
     // this.on("change:author", function(){
     //   console.log( "A posts author was changed." );
     // });
-  }
+  },
+
+  
+ 
 
 });
