@@ -15,7 +15,7 @@ app.AppRouter = Backbone.Router.extend({
   },
 
   viewFlight: function(id){
-    var flight = app.flights.get(id)
+    var flight = app.flights.get(id);
     var flightView = new app.FlightView({model: flight});
     flightView.render(); 
   }
