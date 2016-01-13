@@ -12,21 +12,15 @@ app.AppView = Backbone.View.extend({
   //  this.$el.append(seatingView);
 
     var appViewTemplate = $("#appViewTemplate").html();
-    this.$el.html(appViewTemplate);
+    this.$el.append(appViewTemplate);
 
     var searchInputView = new app.searchInputView();
     searchInputView.render();
 
     // var flightView = new app.FlightView();
     // flightView.render();    
-
-<<<<<<< HEAD
     // var seatingView = new app.seatingView();
     // seatingView.render();
-=======
-    var seatingView = new app.seatingView();
-    seatingView.render();
 
->>>>>>> a694dfe461fadee9dcd1611463047e9726968971
   }
 });

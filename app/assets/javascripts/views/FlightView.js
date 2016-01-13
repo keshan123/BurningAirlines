@@ -1,17 +1,13 @@
 var app = app || {};
 
-
 app.FlightView = Backbone.View.extend({
-  
-tagName: "li", // this creates a new element.
-render: function(){
-  var flightnumber = this.model.get( "flightnumber" ); // Get the content of the model that was passed in.
-  this.$el.text( flightnumber ); // set the li's content to be wahtever was passed in
-  this.$el.prependTo( "#main" ); //Puts in on the HTML page at the start of #secrets.
-}
+  el: '#flightLists',
+  render: function(){
+    var flightViewTemplater = _.template( $('#flightView').html());
+    this.$el.append( flightViewTemplater( this.model.toJSON() ));
+  }
 
 });
-
   // create_table "flights", force: :cascade do |t|
   //   t.string   "flightnumber"
   //   t.string   "origin"
