@@ -4,7 +4,7 @@ app.seatingView = Backbone.View.extend({
   el: "#seatingPlan",
 
   render: function () {
-    var seatingViewTemplate = $("#secretInputViewTemplate").html();
+    var seatingViewTemplate = $("#seatingViewTemplate").html();
     this.$el.html(seatingViewTemplate);
   }
 });
