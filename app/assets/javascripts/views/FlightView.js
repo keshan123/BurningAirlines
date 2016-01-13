@@ -1,6 +1,8 @@
 var app = app || {};
 
+
 app.FlightView = Backbone.View.extend({
+  
 tagName: "li", // this creates a new element.
 render: function(){
   var flightnumber = this.model.get( "flightnumber" ); // Get the content of the model that was passed in.
@@ -19,3 +21,4 @@ render: function(){
   //   t.datetime "updated_at",   null: false
   //   t.integer  "plane_id"
   // end
+

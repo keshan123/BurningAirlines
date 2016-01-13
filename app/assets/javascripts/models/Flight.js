@@ -1,7 +1,7 @@
 var app = app|| {};
 
 app.Flight = Backbone.Model.extend({
-  urlRoot: 'index',
+  urlRoot: '/flights',
   defaults: {
     flightnumber: "10"
   }

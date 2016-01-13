@@ -2,7 +2,7 @@ var app = app ||{};
 
 app.Flights = Backbone.Collection.extend({
   model: app.Flight,
-  url: 'index',
+  url: '/flights',
 
   initialize: function(){
     //This is where my event handler will be added.

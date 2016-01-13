@@ -5,6 +5,9 @@ _.templateSettings = {
 
 var app = app || {};
 
+app.flightList = new app.Flights();
+
+
 $(document).ready(function () {
 
   app.router = new app.AppRouter();
