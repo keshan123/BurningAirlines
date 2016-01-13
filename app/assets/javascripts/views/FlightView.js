@@ -1,10 +1,10 @@
 var app = app || {};
 
 app.FlightView = Backbone.View.extend({
-  el: '#flightLists',
+  el: '#main',
   render: function(){
     var flightViewTemplater = _.template( $('#flightView').html());
-    this.$el.append( flightViewTemplater( this.model.toJSON() ));
+    this.$el.html( flightViewTemplater( this.model.toJSON() ));
   }
 
 });
