@@ -4,6 +4,13 @@ app.AppView = Backbone.View.extend({
   el: "#main",
 
   render: function () {
+
+    var somethingViewTemplate = "Hello, This is the AppView rendering";
+    this.$el.html(somethingViewTemplate);
+
+  // var seatingView = new app.SeatingView();
+  //  this.$el.append(seatingView);
+
     var appViewTemplate = $("#appViewTemplate").html();
     this.$el.html(appViewTemplate);
 
@@ -15,5 +22,6 @@ app.AppView = Backbone.View.extend({
 
     var seatingView = new app.seatingView();
     seatingView.render();
+
   }
 });
