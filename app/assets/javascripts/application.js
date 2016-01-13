@@ -12,15 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
-<<<<<<< HEAD
 
 
-=======
 //= require underscore
 //= require backbone
 //= require_tree ./models
 //= require_tree ./collections
 //= require_tree ./views
 //= require_tree ./routers
->>>>>>> bec44efa013f2dec7eb95bb9a1b76ccadc85a361
+
 //= require_tree .
