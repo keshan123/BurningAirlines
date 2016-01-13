@@ -21,15 +21,18 @@ app.searchInputView = Backbone.View.extend({
 
     // Get all of the origins - 
     var originsList = _.unique( app.flights.pluck( "origin" ) );
-    console.log( originsList );
     // Get all of the destinations - 
     var destinationsList = _.unique( app.flights.pluck( "destination" ) );
-    console.log( destinationsList );
 
     // Put the origins in the first select tag as options - #originSelect
-    $("#originSelect").appendTo("<option>" + originsList + "</option>");
-    // Put the destinations in the second select tag as options - #destinationSelect
-    $("#destinationSelect").appendTo("<option>" + destinationsList + "</option>");
+    _.each( originsList, function( origin )
+    {    $("#originSelect").append("<option>" + origin + "</option>");
+    });
+
+    // Put the destinations in the second select tag as options - #destinationSelect    
+    _.each( destinationsList, function( destination )
+    {    $("#destinationSelect").append("<option>" + destination + "</option>");
+    });
     
   }
 });
