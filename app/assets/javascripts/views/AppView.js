@@ -8,17 +8,11 @@ app.AppView = Backbone.View.extend({
     var somethingViewTemplate = "Hello, This is the AppView rendering";
     this.$el.html(somethingViewTemplate);
 
-  // var seatingView = new app.SeatingView();
-  //  this.$el.append(seatingView);
-
     var appViewTemplate = $("#appViewTemplate").html();
     this.$el.append(appViewTemplate);
 
     var searchInputView = new app.searchInputView();
-    searchInputView.render();
-
-    // var flightView = new app.FlightView();
-    // flightView.render();    
+    searchInputView.render(); 
 
   }
 });

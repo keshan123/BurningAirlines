@@ -18,6 +18,12 @@ app.AppRouter = Backbone.Router.extend({
     var flight = app.flights.get(id);
     var flightView = new app.FlightView({model: flight});
     flightView.render(); 
+  },
+
+  viewSeat: function(id){
+    var seat = app.seats.get(id);
+    var seatView = new app.SeatView({model: seat });
+    seatView.render(); 
   }
 
   });

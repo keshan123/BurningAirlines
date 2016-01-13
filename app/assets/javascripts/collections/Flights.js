@@ -7,10 +7,10 @@ app.Flights = Backbone.Collection.extend({
   initialize: function(){
     //This is where my event handler will be added.
     this.on("add", function(flight){
-      var flightView = new app.FlightView({ model: flight });
       //create a new SecretView and give it some information to represent.
-      flightView.render();
+      var flightView = new app.FlightView({ model: flight });
       // call render on it
+      flightView.render();
     });
   }
 });

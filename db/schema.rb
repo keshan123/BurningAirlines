@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20160112231543) do
     t.string   "name"
     t.integer  "rows"
     t.string   "columns"
+    t.integer  "plane_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

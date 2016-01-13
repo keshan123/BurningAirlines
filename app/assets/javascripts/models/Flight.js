@@ -1,6 +1,4 @@
-var app = app|| {};
-
-
+var app = app || {};
 
 app.Flight = Backbone.Model.extend({
   urlRoot: '/flights',
@@ -9,12 +7,7 @@ app.Flight = Backbone.Model.extend({
   },
     // Set up any behaivor in here.
   initialize: function(){
-    console.log("New post created.");
-
-
+    console.log("New flight created.");
   },
-
-  
- 
 
 });
