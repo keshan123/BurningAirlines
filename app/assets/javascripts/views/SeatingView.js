@@ -9,4 +9,3 @@ app.seatingView = Backbone.View.extend({
     this.$el.html(seatingViewTemplate);
   }
 });
-
