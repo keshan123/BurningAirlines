@@ -42,10 +42,10 @@ app.FlightView = Backbone.View.extend({
       var rowList = Array.range(1, rows);
       $('#main').append("<h2>Rows:" + rowList + "</h2>");
   
-      var columnList = Array.range('A', 'F')
+      var columnList = Array.range('A', columns)
       $('#main').append("<h2>Columns:" + columnList + "</h2>");
     
-     var seats = _.each(rowList, function(row){ _.map(columnList, function(column){column + row})}
+    // var seats = _.each(rowList, function(row){ _.map(columnList, function(column){column + row})}
       $('#main').append("<h2>Seats:" + seats + "</h2>");
     }
   }

@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,100italic,300,300italic,400italic,700,700italic,900,900italic);
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    margin: 0px;
+}
+
+.nav {
+    margin: 0;
+    padding: 10px;
+    background: rgba(10, 10, 10, 1);
+    text-align: center;
+}
+
+.nav li {
+    list-style: none;
+    padding: 0 10px 0 10px;
+    display: inline;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#headerSection {
+    background: url('plane6.jpg')no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    padding: 0px 0px 150px;
+}
+
+
+#headerContainer {
+    max-width: 1080px;
+    margin: 0px auto;
+}
+
+#headerSection h1 {
+    color: rgba(255, 255, 255, 0.6);
+    height: 150px;
+    text-align: center;
+    font: normal normal 300 normal 65px / 71.5px Lato, sans-serif;
+    margin: 0px;
+    outline: rgb(255, 255, 255) none 0px;
+    padding-top: 60px;
+}
+
+#headerP {
+    color: rgba(255, 255, 255, 0.6);
+    height: 31px;
+    text-align: center;
+    font: normal normal 300 normal 22px / 31.4286px Lato, sans-serif;
+    margin: 0px 0px 21px;
+}
+
+#searchForm {
+    width: 500px;
+    margin: 0px auto 140px auto;
+}
+
+
+#originSelect, #destinationSelect {
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    height: 65px;
+    letter-spacing: 1px;
+    width: 180px;
+    -webkit-appearance: none;
+    background: rgba(0, 0, 0, 0.5) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    font: normal normal 300 normal 22px / 26.4px Lato, sans-serif;
+    padding: 0px 30px;
+    border-radius: 0px;
+}
+
+
+#searchButton {
+    color: rgb(255, 255, 255);
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    cursor: pointer;
+    height: 64px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    vertical-align: middle;
+    white-space: nowrap;
+    width: 125px;
+    background: rgba(255, 255, 255, 0.2) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    font: normal normal bold normal 16px / 16px Lato, sans-serif;
+    padding: 0px;
+    margin: -7px 0 0 0;
+}
+
+
+#PageContainer {
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 10px 0px;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: 1000px;
+    max-width: 1000px;
+    position: relative;
+    text-align: center;
+    top: -100px;
+    background: rgb(255, 255, 255) none repeat scroll 0% 0% / auto padding-box border-box;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal normal 14px / 20px Lato, sans-serif;
+    margin: 0px auto;
+    outline: rgb(51, 51, 51) none 0px;
+    overflow: hidden;
+}
+
+#ContentContainer {
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    height: 708px;
+    max-width: 830px;
+    text-align: center;
+    border: 0px none rgb(51, 51, 51);
+    font: normal normal normal normal 14px / 20px Lato, sans-serif;
+    margin: 100px 185px;
+}
+
+h2 {
+    color: rgb(72, 93, 103);
+    font: normal normal 300 normal 36px / 39.6px Lato, sans-serif;
+    margin: 20px 0px 25px;
+}
+
+p {
+    color: rgb(69, 90, 100);
+    text-align: center;
+    font: normal normal 300 normal 18px / 27px Lato, sans-serif;
+}
+
+#flightLists li {
+    color: rgb(69, 90, 100);
+    text-align: center;
+    font: normal normal 300 normal 18px / 27px Lato, sans-serif;
+    list-style: none;
+    background-color: rgba(69, 90, 100, 0.2);
+    padding: 10px;
+    cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+    #ContentContainer {
+        margin: 100px 10px;
+    }
+    #headerSection h1 {
+        font-size: 50px;
+    }
+}
+

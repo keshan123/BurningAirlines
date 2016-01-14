@@ -1,35 +1,57 @@
 
-<div id="main"></div>
+  <section id="headerSection">
+    <div id="main"></div>
+  </section>
+
 
 <script type="html/template" id="appViewTemplate">
-  <h1>Book a flight</h1>
-  
+      <div id="headerContainer">
+        <h1>
+          Welcome to Burning Airlines
+        </h1>
+        <p id="headerP">
+          Searching for a flight
+        </p>
+    
   <div id="searchForm">
     form goes here
   </div>
+  </div>
+  <section id="ContentSection">
+      <div id="PageContainer">
+        <div id="ContentContainer">
+        <ul id="flightLists">
+          flight lists goes here
+        </ul>
 
-  <ul id="flightLists">
-    flight lists goes here
-  </ul>
+        <ul id="seatingPlan">
+        </ul>
 
-  <ul id="seatingPlan">
-    
-  </ul>  
+    </div>
+  </section>
 </script>
 
 <script type="html/template" id="searchInputViewTemplate">
 
   <select name="Travel Origin" id="originSelect"></select>
   <select name="Travel Destination" id="destinationSelect"></select>
-  <button>Search Flights</button>
+  <button id="searchButton">Search</button>
   
 </script>
 
 <script id="flightView" type="text/template">
+<div id="headerContainer">
   <h1>{{ flightnumber }}</h1>
-  <h2>Date: {{ date }}</h2>
-  <h2>Origin: {{ origin }}</h2>
-  <h2>Destination: {{ destination }}</h2>
+</div>
+  <section id="ContentSection">
+      <div id="PageContainer">
+        <div id="ContentContainer">
+          <h2>{{ flightnumber }}</h2>
+          <p>Date: {{ date }}</p>
+          <p>Origin: {{ origin }}</p>
+          <p>Destination: {{ destination }}</p>
+      </div>
+  </section>
 </script>
 
 <script id="seatView" type="html/template">
