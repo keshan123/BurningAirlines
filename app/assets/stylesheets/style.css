@@ -77,6 +77,11 @@ body {
     font: normal normal 300 normal 22px / 26.4px Lato, sans-serif;
     padding: 0px 30px;
     border-radius: 0px;
+    transition: all 0.3s ease;
+}
+
+#originSelect:hover, #destinationSelect:hover {
+    background: rgba(0, 0, 0, 0.7) none repeat scroll 0% 0% / auto padding-box border-box;
 }
 
 
@@ -95,8 +100,12 @@ body {
     font: normal normal bold normal 16px / 16px Lato, sans-serif;
     padding: 0px;
     margin: -7px 0 0 0;
+    transition: all 0.3s ease;
 }
 
+#searchButton:hover {
+    background: rgba(255, 255, 255, 0.5) none repeat scroll 0% 0% / auto padding-box border-box;
+}
 
 #PageContainer {
     box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 10px 0px;
@@ -134,6 +143,10 @@ p {
     color: rgb(69, 90, 100);
     text-align: center;
     font: normal normal 300 normal 18px / 27px Lato, sans-serif;
+}
+
+#flightLists {
+    padding: 0px;
 }
 
 #flightLists li {

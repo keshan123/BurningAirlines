@@ -17,18 +17,14 @@
     form goes here
   </div>
   </div>
-  <section id="ContentSection">
-      <div id="PageContainer">
-        <div id="ContentContainer">
-        <ul id="flightLists">
-          flight lists goes here
-        </ul>
-
-        <ul id="seatingPlan">
-        </ul>
-
+    <div id="PageContainer">
+      <div id="ContentContainer">
+      <ul id="flightLists">
+        <p>Search for a flight to continue</p>
+      </ul>
+      <ul id="seatingPlan">
+      </ul>
     </div>
-  </section>
 </script>
 
 <script type="html/template" id="searchInputViewTemplate">
@@ -40,18 +36,16 @@
 </script>
 
 <script id="flightView" type="text/template">
-<div id="headerContainer">
-  <h1>{{ flightnumber }}</h1>
-</div>
-  <section id="ContentSection">
-      <div id="PageContainer">
-        <div id="ContentContainer">
-          <h2>{{ flightnumber }}</h2>
-          <p>Date: {{ date }}</p>
-          <p>Origin: {{ origin }}</p>
-          <p>Destination: {{ destination }}</p>
-      </div>
-  </section>
+  <div id="headerContainer">
+    <h1>{{ flightnumber }}</h1>
+  </div>
+  <div id="PageContainer">
+    <div id="ContentContainer">
+      <h2>{{ flightnumber }}</h2>
+      <p>Date: {{ date }}</p>
+      <p>Origin: {{ origin }}</p>
+      <p>Destination: {{ destination }}</p>
+  </div>
 </script>
 
 <script id="seatView" type="html/template">
