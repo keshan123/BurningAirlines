@@ -9,10 +9,8 @@
 <body>
 <nav class="nav">
    <ul class="nav navbar-nav">
-    
-     <% if @current_user.present? %>
-       
-       
+    <li><%= link_to("Home", root_path) %></li>
+     <% if @current_user.present? %>   
        <% if @current_user.admin? %>
          <li><%= link_to('Show users', users_path) %></li>
          <li><%= link_to('Add plane',new_plane_path) %></li>

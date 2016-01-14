@@ -1,12 +1,14 @@
-#planeLayout {  
-  border: 10px solid hotpink; 
-  padding: 5px;
+#planeLayout { 
+  font: normal normal 300 normal 17px / 27px Lato, sans-serif; 
+  border: 10px solid gainsboro;
+  padding: 10px;
   display: inline-block;
   width: auto;
+  border-radius: 20px;
 }
 
 .row {
-  border: 1px solid blue;
+  // border: 1px solid blue;
   padding: 5px;
   display: inline-block;
   width: auto;
@@ -19,4 +21,12 @@
   display: inline-block;
   text-align: center;
   line-height: 50px;
+  margin: 2px;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.column:hover {
+  background-color: gainsboro;
 }
