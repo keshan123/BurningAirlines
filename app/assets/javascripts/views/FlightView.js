@@ -44,6 +44,11 @@ app.FlightView = Backbone.View.extend({
       var columnList = Array.range('A', columns)
       //$('#ContentContainer').append("<h3>Columns:" + columnList + "</h3>");
 
+    
+     // var seats = _.each(rowList, function(row){ _.map(columnList, function(column){column + row})}
+     //$('#main').append("<h2>Seats:" + seats + "</h2>");
+
+
       // Create a div with the id of planeLayout and put it at the end of the body
       // This is where all of the seats will go
       $("#ContentContainer").append( "<div id='planeLayout'></div>" )
@@ -80,6 +85,7 @@ app.FlightView = Backbone.View.extend({
       for (var i = 1; i <= rows; i++ ) { 
         generateRow( i )
       }
+
     }
   }
 
