@@ -7,7 +7,7 @@ app.FlightView = Backbone.View.extend({
     this.$el.html( flightViewTemplater( this.model.toJSON() ));
 
     var planeId = this.model.get('plane_id');
-    $('#main').append("<h3>Plane ID: " + planeId + "</h3>");
+    //$('#main').append("<h3>Plane ID: " + planeId + "</h3>");
 
     if (app.seats){
       var plane = app.seats.get( planeId );
@@ -39,10 +39,10 @@ app.FlightView = Backbone.View.extend({
       }
 
       var rowList = Array.range(1, rows);
-      $('#ContentContainer').append("<h3>Rows:" + rowList + "</h3>");
+      //$('#ContentContainer').append("<h3>Rows:" + rowList + "</h3>");
   
       var columnList = Array.range('A', columns)
-      $('#ContentContainer').append("<h3>Columns:" + columnList + "</h3>");
+      //$('#ContentContainer').append("<h3>Columns:" + columnList + "</h3>");
 
       // Create a div with the id of planeLayout and put it at the end of the body
       // This is where all of the seats will go
