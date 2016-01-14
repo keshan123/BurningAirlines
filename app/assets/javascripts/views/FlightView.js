@@ -7,20 +7,12 @@ app.FlightView = Backbone.View.extend({
     this.$el.html( flightViewTemplater( this.model.toJSON() ));
 
     var planeId = this.model.get('plane_id');
-    $('#main').append("<h2>" + planeId + "</h2>");
+    $('#main').append("<h3>Plane ID: " + planeId + "</h3>");
 
     if (app.seats){
       var plane = app.seats.get( planeId );
       var planeName = plane.get('name');
-      $('#main').append("<h2>Plane ID: " + planeName + "</h2>");
-
-      // var planeRows = plane.get('rows');
-      // //var planeRowsArray = _.range( planeRows+1 );
-      // $('#main').append("<h2> Rows: " + planeRowsArray + "</h2>");
-
-      // var planeColumns = plane.get('columns');
-      // var planeColumnsArray = _.range( 'A', 'planeColumns' );
-      // $('#main').append("<h2>Columns: " + planeColumnsArray + "</h2>");
+      $('#main').append("<h3>Plane Name: " + planeName + "</h3>");
 
       var rows = plane.get('rows');
       var columns = plane.get('columns');
@@ -47,10 +39,10 @@ app.FlightView = Backbone.View.extend({
       }
 
       var rowList = Array.range(1, rows);
-      $('#main').append("<h2>Rows:" + rowList + "</h2>");
+      $('#ContentContainer').append("<h3>Rows:" + rowList + "</h3>");
   
       var columnList = Array.range('A', columns)
-      $('#main').append("<h2>Columns:" + columnList + "</h2>");
+      $('#ContentContainer').append("<h3>Columns:" + columnList + "</h3>");
 
     
      // var seats = _.each(rowList, function(row){ _.map(columnList, function(column){column + row})}
@@ -59,7 +51,7 @@ app.FlightView = Backbone.View.extend({
 
       // Create a div with the id of planeLayout and put it at the end of the body
       // This is where all of the seats will go
-      $("#main").append( "<div id='planeLayout'></div>" )
+      $("#ContentContainer").append( "<div id='planeLayout'></div>" )
 
       var generateColumn = function (rowNumber) { // Receive a row number
         console.log( "\tCreating seats. Row to be put in: Number " + rowNumber + ". You can select this with $('.row" + rowNumber + "');");
@@ -94,25 +86,6 @@ app.FlightView = Backbone.View.extend({
         generateRow( i )
       }
 
-
-      // for ( var c = 1; c < rowList.length+1; i++ ){
-
-        var arr = [];
-
-        for (var i=0; i<columnList.length+1; i++) {
-          arr[i] = i - i + 1;
-        };
-
-        var re = _.object( columnList, arr );
-       $('#main').append("<h2>Object:" + re + "</h2>");
-
-        console.log( re );
-       
-      // };
-
-     //var seats = _.each(rowList, function(row){ _.map(columnList, function(column){column + row})}
-     //$('#main').append("<h2>Seats:" + seats + "</h2>");
-
     }
   }
 
@@ -121,31 +94,10 @@ app.FlightView = Backbone.View.extend({
 app.SeatView = Backbone.View.extend({
   el: '#main',
   render: function(){
-    // var seatViewTemplater = _.template( $('#seatView').html());
-    // this.$el.html( seatViewTemplater( this.model.toJSON() ));
 
-    // var planeName = this.model.get('name');
-
-    // $('#main').append("<h2>" + planeName + "</h2>");
   }
 
 });
 
-  // create_table "planes", force: :cascade do |t|
-  //   t.string   "name"
-  //   t.integer  "rows"
-  //   t.string   "columns"
-  //   t.integer  "plane_id"
-  //   t.datetime "created_at", null: false
-  //   t.datetime "updated_at", null: false
-  // end
-  // create_table "flights", force: :cascade do |t|
-  //   t.string   "flightnumber"
-  //   t.string   "origin"
-  //   t.string   "destination"
-  //   t.date     "date"
-  //   t.datetime "created_at",   null: false
-  //   t.datetime "updated_at",   null: false
-  //   t.integer  "plane_id"
-  // end
+
 

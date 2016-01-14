@@ -5,11 +5,8 @@ app.AppView = Backbone.View.extend({
 
   render: function () {
 
-    var somethingViewTemplate = "Hello, This is the AppView rendering";
-    this.$el.html(somethingViewTemplate);
-
     var appViewTemplate = $("#appViewTemplate").html();
-    this.$el.append(appViewTemplate);
+    this.$el.html(appViewTemplate);
 
     var searchInputView = new app.searchInputView();
     searchInputView.render(); 
